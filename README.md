@@ -21,7 +21,7 @@ A user inputs a single **seed company domain** (e.g., `stripe.com`), and the pip
 1. **Stage 1 (Ocean.io)**: Given the seed domain, it calls Ocean.io's lookalike search to find similar company profiles (filtered by size, region, and industry).
 2. **Stage 2 (Prospeo)**: For each lookalike company found, it queries Prospeo to identify C-level, VP, or Director level contacts, along with their LinkedIn profiles.
 3. **Stage 3 (Email Resolver)**:
-   > ℹ️ *Note: Per instructor guidelines, Eazyreach is skipped in this stage. The pipeline leverages Prospeo's contact enrichment engine as a robust fallback to find and verify professional work emails.*
+ℹ️ *Note: Per instructor guidelines, Eazyreach is skipped in this stage. The pipeline leverages Prospeo's contact enrichment engine as a robust fallback to find and verify professional work emails.*
 4. **Stage 4 (Brevo / Transactional Email)**: Before sending, the application displays a **Safety Checkpoint** detailing all emails to be sent. Upon user confirmation, it personalizes a HTML email template and fires outreach messages via Brevo (formerly Sendinblue).
 
 ---
